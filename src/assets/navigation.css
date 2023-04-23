@@ -1,0 +1,84 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 4rem;
+}
+
+@media screen and (max-width: 31.25em) {
+    .nav {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+ 
+.nav__link img {
+    width: 18rem;
+}
+
+@media screen and (max-width: 31.25em) {
+    .nav__link img {
+      width: 15rem;
+    }
+}
+
+.nav__title {
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+
+.nav__kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--color-font-secondary);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+}
+
+.nav__kontak h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-font-primary);
+}
+
+.nav__kontak img {
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.nav__search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+    @media screen and (max-width: 31.25em) {
+        .nav__link img {
+          width: 15rem;
+        }
+    
+        .nav__kontak h1 {
+            font-size: 1.6rem;
+        }
+    
+        .nav__kontak img {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        .nav__search {
+            grid-column: 1/-1;
+            font-size: 2.4rem;
+        }
+
+        .nav__search img {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
