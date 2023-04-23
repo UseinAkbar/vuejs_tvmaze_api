@@ -27,3 +27,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Live Project
+
+```sh
+https://vuejs-tvmaze-api.vercel.app/
+```
