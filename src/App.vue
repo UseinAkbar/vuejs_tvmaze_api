@@ -11,7 +11,7 @@
   const selectedMovies = ref({id: '', name: '', image: '', network: '', rating: '', premiered: '', summary: '', language: '', genres: ''})
 
   async function getData() {
-        const data = await fetch("http://api.tvmaze.com/search/shows?q=girls")
+        const data = await fetch("https://api.tvmaze.com/search/shows?q=girls")
         .then(response => response.json())
         .then(res => res)
     
