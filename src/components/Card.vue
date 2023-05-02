@@ -11,8 +11,8 @@ defineProps({
 
 <template>
     <div v-for="{show: {id, name, image, network, rating, premiered, language}} in listMovies" class="card">
-
-      <img :src="image ? image.original : '../src/assets/movie.jpg'" alt="" srcset="" class="card__img">
+      <img v-if="image" :src="image.original" alt="" srcset="" class="card__img">
+      <img v-else src="../assets/movie.jpg" alt="" srcset="" class="card__img">
       <div class="card__box">
         <div class="card__top">
           <div>{{language}}</div>
