@@ -65,7 +65,8 @@
         <div class="modal__close" @click="handleClose">
           <img src="./assets/close.svg" alt="">
         </div>
-        <img :src="selectedMovies.image.original" alt="">
+        <img v-if="selectedMovies.image" :src="selectedMovies.image.original" alt="">
+        <img v-else src="./assets/movie.jpg" alt="">
     </div>
   </div>
   <!-- <Modal :movie="selectedMovies" :isClicked="isClicked" /> -->
